@@ -8,9 +8,8 @@
 
 NAMESPACE_REDIS_BEGIN
 
-    class Reply: std::enable_shared_from_this<Reply>
-    {
+class Reply : std::enable_shared_from_this<Reply> {
 
-    };
+};
 
 NAMESPACE_REDIS_END

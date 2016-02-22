@@ -9,5 +9,6 @@ aux_source_directory(. ROOT_SRC_LIST)
 add_library(acredis STATIC ${ROOT_SRC_LIST})
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
+include_directories(/usr/local/include .)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 link_directories(${PROJECT_SOURCE_DIR}/lib)
