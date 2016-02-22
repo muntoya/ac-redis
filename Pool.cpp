@@ -3,7 +3,7 @@
 //
 
 #include "def.h"
-#include "Connections.h"
+#include "Pool.h"
 
 NAMESPACE_REDIS_BEGIN
 
