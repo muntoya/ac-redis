@@ -5,7 +5,5 @@
 #ifndef AC_REDIS_DEF_H
 #define AC_REDIS_DEF_H
 
-#define NAMESPACE_REDIS_BEGIN namespace redis {
-#define NAMESPACE_REDIS_END }
 
 #endif //AC_REDIS_DEF_H

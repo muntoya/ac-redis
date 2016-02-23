@@ -2,18 +2,20 @@
 // Created by baidu on 2/22/16.
 //
 
-#ifndef AC_REDIS_CONNECTIONS_H
-#define AC_REDIS_CONNECTIONS_H
+#ifndef AC_REDIS_POOL_H
+#define AC_REDIS_POOL_H
 
 
 #include <memory>
+#include <vector>
 #include <boost/asio.hpp>
 #include "def.h"
 #include "Connection.h"
 
 
-NAMESPACE_REDIS_BEGIN
-using conns_t = std::vector<std::unique_ptr<Connection>>
+namespace redis {
+
+using conns_t = std::vector<std::unique_ptr<Connection>>;
 
 
 class Pool
@@ -34,6 +36,6 @@ private:
 	conns_t conns;
 };
 
-NAMESPACE_REDIS_END
+}
 
-#endif //AC_REDIS_CONNECTIONS_H
+#endif //AC_REDIS_POOL_H

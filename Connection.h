@@ -9,15 +9,15 @@
 #include <boost/asio.hpp>
 #include "def.h"
 
-NAMESPACE_REDIS_BEGIN
+namespace redis {
 
 class Connection
 {
 public:
-	Connection(boost::asio::io_service& io_service);
+	Connection(boost::asio::io_service &io_service);
 
 };
 
-NAMESPACE_REDIS_END
+}
 
 #endif //AC_REDIS_CONNECTION_H

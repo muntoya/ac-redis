@@ -5,8 +5,8 @@
 #include "def.h"
 #include "Pool.h"
 
-NAMESPACE_REDIS_BEGIN
+namespace redis {
 
 using boost::asio::ip::tcp;
 
-NAMESPACE_REDIS_END
+}
