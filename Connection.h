@@ -14,8 +14,14 @@ namespace redis {
 class Connection
 {
 public:
-	Connection(boost::asio::io_service &io_service);
+	Connection(boost::asio::io_service &io_service,
+		boost::asio::ip::tcp::resolver::iterator endpoint_iterator);
 
+private:
+	boost::asio::io_service& io_service_;
+	boost::asio::ip::tcp::socket socket_;
+
+	boost::asio::ip::tcp::resolver::iterator endpoint_iterator_;
 };
 
 }
